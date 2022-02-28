@@ -37,9 +37,9 @@ function Book(title, author, year, genre) {
     this.genre = genre;   
 
     this.age = function(){
-        const d = new Date()
-        const currentYear = d.getFullYear()
-        return currentYear = this.year //a korat irtuk itt meg a konyvnek
+        const d = new Date() //date = constructior
+        const currentYear = d.getFullYear() //general egy evet
+        return currentYear - this.year //a korat irtuk itt meg a konyvnek
     }
 
 }
